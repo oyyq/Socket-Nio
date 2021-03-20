@@ -1,5 +1,10 @@
-
+本地监视网络IO速度
 https://user-images.githubusercontent.com/26019986/111859883-0acd2300-897f-11eb-99bf-dc3832339217.mp4
+
+Java VisuaVM监视线程利用效率
+https://user-images.githubusercontent.com/26019986/111860187-d8bcc080-8980-11eb-8611-1c2fa8dad16f.mp4
+
+
 
 
 
