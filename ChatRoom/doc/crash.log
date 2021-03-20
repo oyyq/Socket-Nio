@@ -1,0 +1,72 @@
+java.io.IOException: Cannot write any data!
+	at net.qiujuer.library.clink.impl.SocketChannelAdapter$2.canProviderOutput(SocketChannelAdapter.java:115)
+	at net.qiujuer.library.clink.core.IoProvider$HandleOutputCallback.run(IoProvider.java:28)
+	at net.qiujuer.library.clink.impl.IoSelectorProvider$WriteRunnable.run(IoSelectorProvider.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Exception in thread "IoProvider-Output-Thread-1" java.nio.BufferOverflowException
+	at java.nio.HeapByteBuffer.put(HeapByteBuffer.java:189)
+	at java.nio.channels.Channels$ReadableByteChannelImpl.read(Channels.java:393)
+	at net.qiujuer.library.clink.core.IoArgs.readFrom(IoArgs.java:42)
+	at net.qiujuer.library.clink.frames.SendEntityFrame.consumeBody(SendEntityFrame.java:36)
+	at net.qiujuer.library.clink.frames.AbsSendFrame.handle(AbsSendFrame.java:30)
+	at net.qiujuer.library.clink.frames.AbsSendPacketFrame.handle(AbsSendPacketFrame.java:32)
+	at net.qiujuer.library.clink.impl.async.AsyncPacketReader.fillData(AsyncPacketReader.java:71)
+	at net.qiujuer.library.clink.impl.async.AsyncSendDispatcher.provideIoArgs(AsyncSendDispatcher.java:150)
+	at net.qiujuer.library.clink.impl.SocketChannelAdapter$2.canProviderOutput(SocketChannelAdapter.java:106)
+	at net.qiujuer.library.clink.core.IoProvider$HandleOutputCallback.run(IoProvider.java:28)
+	at net.qiujuer.library.clink.impl.IoSelectorProvider$WriteRunnable.run(IoSelectorProvider.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+java.io.EOFException
+	at net.qiujuer.library.clink.core.IoArgs.readFrom(IoArgs.java:44)
+	at net.qiujuer.library.clink.frames.SendEntityFrame.consumeBody(SendEntityFrame.java:36)
+	at net.qiujuer.library.clink.frames.AbsSendFrame.handle(AbsSendFrame.java:30)
+	at net.qiujuer.library.clink.frames.AbsSendPacketFrame.handle(AbsSendPacketFrame.java:32)
+	at net.qiujuer.library.clink.impl.async.AsyncPacketReader.fillData(AsyncPacketReader.java:71)
+	at net.qiujuer.library.clink.impl.async.AsyncSendDispatcher.provideIoArgs(AsyncSendDispatcher.java:150)
+	at net.qiujuer.library.clink.impl.SocketChannelAdapter$2.canProviderOutput(SocketChannelAdapter.java:106)
+	at net.qiujuer.library.clink.core.IoProvider$HandleOutputCallback.run(IoProvider.java:28)
+	at net.qiujuer.library.clink.impl.IoSelectorProvider$WriteRunnable.run(IoSelectorProvider.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+
+
+
+
+
+	Exception in thread "IoProvider-Output-Thread-4" java.lang.IllegalArgumentException
+    	at java.nio.Buffer.position(Buffer.java:244)
+    	at sun.nio.ch.IOUtil.write(IOUtil.java:68)
+    	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+    	at net.qiujuer.library.clink.core.IoArgs.writeTo(IoArgs.java:91)
+    	at net.qiujuer.library.clink.impl.SocketChannelAdapter$2.canProviderOutput(SocketChannelAdapter.java:111)
+    	at net.qiujuer.library.clink.core.IoProvider$HandleOutputCallback.run(IoProvider.java:28)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    	at java.lang.Thread.run(Thread.java:748)
+    Exception in thread "IoProvider-Output-Thread-1" java.lang.IllegalArgumentException
+    	at java.nio.Buffer.position(Buffer.java:244)
+    	at sun.nio.ch.IOUtil.write(IOUtil.java:68)
+    	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+    	at net.qiujuer.library.clink.core.IoArgs.writeTo(IoArgs.java:91)
+    	at net.qiujuer.library.clink.impl.SocketChannelAdapter$2.canProviderOutput(SocketChannelAdapter.java:111)
+    	at net.qiujuer.library.clink.core.IoProvider$HandleOutputCallback.run(IoProvider.java:28)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    	at java.lang.Thread.run(Thread.java:748)
+    Exception in thread "IoProvider-Output-Thread-3" java.lang.IllegalArgumentException
+    	at java.nio.Buffer.position(Buffer.java:244)
+    	at sun.nio.ch.IOUtil.write(IOUtil.java:68)
+    	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+    	at net.qiujuer.library.clink.core.IoArgs.writeTo(IoArgs.java:91)
+    	at net.qiujuer.library.clink.impl.SocketChannelAdapter$2.canProviderOutput(SocketChannelAdapter.java:111)
+    	at net.qiujuer.library.clink.core.IoProvider$HandleOutputCallback.run(IoProvider.java:28)
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+    	at java.lang.Thread.run(Thread.java:748)
